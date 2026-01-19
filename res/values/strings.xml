@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">Конвертер валют</string>
+    <string name="connect">Загрузка данных...</string>
+
+    <string name="currency_selection_header">Мировые валюты</string>
+    <string name="search">Поиск...</string>
+
+    <string name="flag">Флаг</string>
+    <string name="to">В какую валюту конвертировать</string>
+    <string name="from">Из какой валюты конвертировать</string>
+
+    <string name="default_result_currency">EUR</string>
+    <string name="default_input_currency">RUB</string>
+
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="clear">C</string>
+
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="backspace">⌫</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="separator">,</string>
+
+    <string name="zero">0</string>
+
+</resources>
