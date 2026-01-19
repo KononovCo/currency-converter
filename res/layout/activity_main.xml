@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        style="@style/StylePanel"
+        android:id="@+id/resultPanel">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/StyleFlag"
+                android:id="@+id/resultFlag"
+                android:contentDescription="@string/to"
+                app:srcCompat="@drawable/euro" />
+
+            <TextView
+                style="@style/StyleCurrency"
+                android:id="@+id/resultCurrency"
+                android:text="@string/default_result_currency" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/StyleInput"
+            android:id="@+id/resultText"
+            android:text="@string/zero" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/StylePanel"
+        android:id="@+id/inputPanel">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/StyleFlag"
+                android:id="@+id/inputFlag"
+                android:contentDescription="@string/from"
+                app:srcCompat="@drawable/russia" />
+
+            <TextView
+                style="@style/StyleCurrency"
+                android:id="@+id/inputCurrency"
+                android:text="@string/default_input_currency" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/StyleInput"
+            android:id="@+id/inputText"
+            android:text="@string/zero" />
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TableRow style="@style/StyleTableRow">
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/seven"
+                android:text="@string/seven" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/eight"
+                android:text="@string/eight" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/nine"
+                android:text="@string/nine" />
+
+            <Button
+                style="@style/StyleOperation"
+                android:id="@+id/clear"
+                android:text="@string/clear" />
+
+        </TableRow>
+
+        <TableRow style="@style/StyleTableRow">
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/four"
+                android:text="@string/four" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/five"
+                android:text="@string/five" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/six"
+                android:text="@string/six" />
+
+            <Button
+                style="@style/StyleOperation"
+                android:id="@+id/backspace"
+                android:text="@string/backspace" />
+
+        </TableRow>
+
+        <TableRow style="@style/StyleTableRow">
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/one"
+                android:text="@string/one" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/two"
+                android:text="@string/two" />
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/three"
+                android:text="@string/three" />
+
+            <Button
+                style="@style/StyleOperation"
+                android:id="@+id/separator"
+                android:text="@string/separator" />
+
+        </TableRow>
+
+        <TableRow style="@style/StyleTableRow">
+
+            <Button
+                style="@style/StyleNumber"
+                android:id="@+id/zero"
+                android:text="@string/zero" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
